@@ -61,14 +61,13 @@ canvas.drawText(message: "kingston, jamaica", at: Point(x: 257, y: 500),size: 15
 for x in stride(from: 0, through: 350, by: 50) {
     
     if x == 0 || x == 100 || x == 200 || x == 300 {
-        canvas.fillColor = Color.green
+        canvas.fillColor = Color.black
     } else {
         canvas.fillColor = Color.purple
     }
     
     canvas.drawRectangle(at: Point(x: x, y: 0), width: 50, height: 400)
     
-   
 }
 
 canvas.borderColor = Color.red
@@ -223,7 +222,147 @@ canvas.drawEllipse(at: Point(x: 375, y: 275), width: 45, height: 45)
 canvas.drawEllipse(at: Point(x: 375, y: 225), width: 45, height: 45)
 
 
+canvas.borderColor = Color.yellow
+canvas.fillColor = Color.yellow
+canvas.drawRectangle(at: Point(x: 20, y: 100), width: 10, height: 100)
+canvas.drawRectangle(at: Point(x: 0, y: 170), width: 50, height: 10)
 
+
+canvas.drawCurve(from: Point(x: 75, y: 200), to: Point(x: 75, y: 100), control1: Point(x: 110, y: 150), control2: Point(x: 110, y: 150))
+canvas.drawCurve(from: Point(x: 75, y: 200), to: Point(x: 75, y: 100), control1: Point(x: 40, y: 150), control2: Point(x: 40, y:  150))
+canvas.borderColor = Color.red
+canvas.fillColor = Color.red
+canvas.drawEllipse(at: Point(x: 75, y: 150), width: 50, height: 50)
+canvas.borderColor = Color.black
+canvas.fillColor = Color.white
+canvas.drawEllipse(at: Point(x: 75, y: 150), width: 15, height: 15)
+
+
+canvas.borderColor = Color.yellow
+canvas.fillColor = Color.yellow
+canvas.drawRectangle(at: Point(x: 120, y: 100), width: 10, height: 100)
+canvas.drawRectangle(at: Point(x: 100, y: 170), width: 50, height: 10)
+
+
+canvas.drawCurve(from: Point(x: 175, y: 200), to: Point(x: 175, y: 100), control1: Point(x: 140, y: 150), control2: Point(x: 140, y: 150))
+canvas.drawCurve(from: Point(x: 175, y: 200), to: Point(x: 175, y: 100), control1: Point(x: 210, y: 150), control2: Point(x: 210, y:  150))
+canvas.borderColor = Color.red
+canvas.fillColor = Color.red
+canvas.drawEllipse(at: Point(x: 175, y: 150), width: 50, height: 50)
+canvas.borderColor = Color.black
+canvas.fillColor = Color.white
+canvas.drawEllipse(at: Point(x: 175, y: 150), width: 15, height: 15)
+
+
+canvas.borderColor = Color.yellow
+canvas.fillColor = Color.yellow
+canvas.drawRectangle(at: Point(x: 220, y: 100), width: 10, height: 100)
+canvas.drawRectangle(at: Point(x: 200, y: 170), width: 50, height: 10)
+
+
+canvas.drawCurve(from: Point(x: 275, y: 200), to: Point(x: 275, y: 100), control1: Point(x: 240, y: 150), control2: Point(x: 240, y: 150))
+canvas.drawCurve(from: Point(x: 275, y: 200), to: Point(x: 275, y: 100), control1: Point(x: 310, y: 150), control2: Point(x: 310, y:  150))
+canvas.borderColor = Color.red
+canvas.fillColor = Color.red
+canvas.drawEllipse(at: Point(x: 275, y: 150), width: 50, height: 50)
+canvas.borderColor = Color.black
+canvas.fillColor = Color.white
+canvas.drawEllipse(at: Point(x: 275, y: 150), width: 15, height: 15)
+
+
+canvas.borderColor = Color.yellow
+canvas.fillColor = Color.yellow
+canvas.drawRectangle(at: Point(x: 320, y: 100), width: 10, height: 100)
+canvas.drawRectangle(at: Point(x: 300, y: 170), width: 50, height: 10)
+
+
+canvas.drawCurve(from: Point(x: 375, y: 200), to: Point(x: 375, y: 100), control1: Point(x: 340, y: 150), control2: Point(x: 340, y: 150))
+canvas.drawCurve(from: Point(x: 375, y: 200), to: Point(x: 375, y: 100), control1: Point(x: 410, y: 150), control2: Point(x: 410, y:  150))
+canvas.borderColor = Color.red
+canvas.fillColor = Color.red
+canvas.drawEllipse(at: Point(x: 375, y: 150), width: 50, height: 50)
+canvas.borderColor = Color.black
+canvas.fillColor = Color.white
+canvas.drawEllipse(at: Point(x: 375, y: 150), width: 15, height: 15)
+
+
+canvas.borderColor = Color.black
+var vertice8:[Point] = []
+vertice8.append(Point(x: 30, y: 100))
+vertice8.append(Point(x: 70, y: 100))
+vertice8.append(Point(x: 52, y: 40))
+vertice8.append(Point(x: 75, y: 0))
+vertice8.append(Point(x: 25, y: 0))
+vertice8.append(Point(x: 48, y: 40))
+vertice8.append(Point(x: 30, y: 100))
+canvas.drawCustomShape(with: vertice8)
+
+
+canvas.lineColor = Color.white
+canvas.drawCurve(from: Point(x: 52, y: 40), to: Point(x: 100, y: 100), control1: Point(x: 100, y: 48), control2: Point(x: 90, y: 48))
+canvas.drawLine(from: Point(x: 52, y: 40), to: Point(x: 100, y: 100))
+canvas.drawCurve(from: Point(x: 48, y: 40), to: Point(x: 0, y: 100), control1: Point(x: 0, y: 48), control2: Point(x: 10, y: 48))
+canvas.drawLine(from: Point(x: 48, y: 40), to: Point(x: 0, y: 100))
+
+
+canvas.borderColor = Color.orange
+canvas.fillColor = Color.orange
+var vertice9:[Point] = []
+vertice9.append(Point(x: 130, y: 100))
+vertice9.append(Point(x: 170, y: 100))
+vertice9.append(Point(x: 152, y: 40))
+vertice9.append(Point(x: 175, y: 0))
+vertice9.append(Point(x: 125, y: 0))
+vertice9.append(Point(x: 148, y: 40))
+vertice9.append(Point(x: 130, y: 100))
+canvas.drawCustomShape(with: vertice9)
+
+
+canvas.lineColor = Color.white
+canvas.drawCurve(from: Point(x: 152, y: 40), to: Point(x: 200, y: 100), control1: Point(x: 200, y: 48), control2: Point(x: 190, y: 48))
+canvas.drawLine(from: Point(x: 152, y: 40), to: Point(x: 200, y: 100))
+canvas.drawCurve(from: Point(x: 148, y: 40), to: Point(x: 100, y: 100), control1: Point(x: 100, y: 48), control2: Point(x: 110, y: 48))
+canvas.drawLine(from: Point(x: 148, y: 40), to: Point(x: 100, y: 100))
+
+
+canvas.borderColor = Color.black
+canvas.fillColor = Color.white
+var vertice11:[Point] = []
+vertice11.append(Point(x: 230, y: 100))
+vertice11.append(Point(x: 270, y: 100))
+vertice11.append(Point(x: 252, y: 40))
+vertice11.append(Point(x: 275, y: 0))
+vertice11.append(Point(x: 225, y: 0))
+vertice11.append(Point(x: 248, y: 40))
+vertice11.append(Point(x: 230, y: 100))
+canvas.drawCustomShape(with: vertice11)
+
+
+canvas.lineColor = Color.white
+canvas.drawCurve(from: Point(x: 252, y: 40), to: Point(x: 300, y: 100), control1: Point(x: 300, y: 48), control2: Point(x: 290, y: 48))
+canvas.drawLine(from: Point(x: 252, y: 40), to: Point(x: 300, y: 100))
+canvas.drawCurve(from: Point(x: 248, y: 40), to: Point(x: 200, y: 100), control1: Point(x: 200, y: 48), control2: Point(x: 210, y: 48))
+canvas.drawLine(from: Point(x: 248, y: 40), to: Point(x: 200, y: 100))
+
+
+canvas.borderColor = Color.orange
+canvas.fillColor = Color.orange
+var vertice22:[Point] = []
+vertice22.append(Point(x: 330, y: 100))
+vertice22.append(Point(x: 370, y: 100))
+vertice22.append(Point(x: 352, y: 40))
+vertice22.append(Point(x: 375, y: 0))
+vertice22.append(Point(x: 325, y: 0))
+vertice22.append(Point(x: 348, y: 40))
+vertice22.append(Point(x: 330, y: 100))
+canvas.drawCustomShape(with: vertice22)
+
+
+canvas.lineColor = Color.white
+canvas.drawCurve(from: Point(x: 352, y: 40), to: Point(x: 400, y: 100), control1: Point(x: 400, y: 48), control2: Point(x: 390, y: 48))
+canvas.drawLine(from: Point(x: 352, y: 40), to: Point(x: 400, y: 100))
+canvas.drawCurve(from: Point(x: 348, y: 40), to: Point(x: 300, y: 100), control1: Point(x: 300, y: 48), control2: Point(x: 310, y: 48))
+canvas.drawLine(from: Point(x: 348, y: 40), to: Point(x: 300, y: 100))
 /*:
  ## Show the Live View
  Don't see any results?
